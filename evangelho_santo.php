@@ -54,10 +54,10 @@ if ($http_code == 200 && $response) {
         <h1>Evangelho do Dia</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Eventos/eventos.html">Eventos</a></li>
-                <li><a href="../Eventos/horario.html">Horários de Missa</a></li>
-                <li><a href="../Contato/contatos.php">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="horario.html">Horários de Missa</a></li>
+                <li><a href="contatos.php">Contato</a></li>
                 <li><a href="evangelho_santo.php">Evangelho</a></li>
             </ul>
         </nav>
@@ -76,7 +76,7 @@ if ($http_code == 200 && $response) {
         <section id="leitura-extra">
             <h2>Para Aprofundar</h2>
             <p>Recomendamos a leitura completa da Bíblia e a vida dos santos para maior conhecimento e edificação espiritual. Visite a seção de Horários de Missa para participar da celebração diária da Palavra e da Eucaristia.</p>
-            <a href="../Eventos/horario.html" class="btn-voltar">Ver Horários de Missa</a>
+            <a href="horario.html" class="btn-voltar">Ver Horários de Missa</a>
         </section>
     </main>
 
