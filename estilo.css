@@ -1,0 +1,344 @@
+/* Geral */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+/* Cabeçalho */
+header {
+    background-image: url('../Imagens/FOTOS/2a8abba9-d93f-45c2-8459-6723a4e4dc1b.jpeg'); /* Caminho corrigido e com sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área, cortando se necessário */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: #0044cc; /* Uma cor de fallback caso a imagem não carregue */
+    color: white;
+    padding: 100px 0 100px; /* Mantive o padding original que você enviou */
+    position: relative;
+    text-align: center;
+}
+
+header img { /* Logo no canto superior esquerdo - TAMANHO E POSIÇÃO AJUSTADOS */
+    position: absolute;
+    top: 20px; /* Ajustado para mais perto do topo */
+    left: 20px; /* Ajustado para mais perto da esquerda */
+    width: 180px; /* Aumentado o tamanho da logo */
+    height: auto;
+}
+
+header h1 { /* Título ajustado para não sobrepor a logo */
+    margin-left: 220px; /* Ajustado para acomodar a nova largura e posição da logo */
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seções de conteúdo */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limita a largura do conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0044cc;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #0055aa;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para a seção de Introdução Geral (index.php) */
+#introducao-geral .conteudo-principal {
+    display: flex;
+    flex-direction: row; /* Imagem ao lado do texto */
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+}
+
+#introducao-geral .imagem-destaque {
+    flex: 0 0 400px; /* Largura fixa para a imagem */
+    max-width: 100%; /* Garante responsividade */
+    text-align: center;
+}
+
+#introducao-geral .imagem-destaque img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#introducao-geral .imagem-destaque figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+#introducao-geral .texto-introducao {
+    flex: 1; /* O texto ocupa o espaço restante */
+    min-width: 300px; /* Garante que o texto não fique muito apertado */
+}
+
+/* Estilos para a seção Sobre Nós (index.php) */
+#sobre-nos .conteudo-sobre-nos {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#sobre-nos .historia-resumo {
+    flex: 2; /* A história ocupa mais espaço */
+    min-width: 300px;
+}
+
+#sobre-nos .padre-info {
+    flex: 1; /* A info do padre ocupa menos espaço */
+    min-width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+#sobre-nos .img-padre {
+    width: 150px; /* Tamanho da foto do padre */
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    margin-bottom: 15px;
+    border: 3px solid #0044cc;
+}
+
+.btn-leia-mais, .btn-ver-mais, .btn-contato, .btn-voltar {
+    display: inline-block;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-leia-mais:hover, .btn-ver-mais:hover, .btn-contato:hover, .btn-voltar:hover {
+    background-color: #0055aa;
+    transform: translateY(-2px);
+}
+
+/* Estilos para a seção Destaques (index.php) */
+#destaques .destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 25px;
+}
+
+#destaques .card {
+    background-color: #fcfcfc;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+#destaques .card h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+#destaques .card h3 a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+#destaques .card h3 a:hover {
+    text-decoration: underline;
+}
+
+#destaques .card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#destaques .card ul li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Estilos específicos para o formulário de contato */
+#formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+#formulario-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato input[type="assunto"],
+#formulario-contato textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding não adicione largura extra */
+}
+
+#formulario-contato textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+#formulario-contato button[type="submit"] {
+    background-color: #0044cc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-contato button[type="submit"]:hover {
+    background-color: #0055aa;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Estilos para as mídias sociais no rodapé */
+.social-media {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 15px; /* Adiciona espaço entre as imagens */
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo dos ícones antes do texto do copyright */
+}
+
+.social-media a img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header img {
+        position: static; /* Volta para o fluxo normal */
+        display: block;
+        margin: 0 auto 10px auto; /* Centraliza a logo */
+        max-width: 90%; /* Garante que a logo não ultrapasse a largura da tela em dispositivos menores */
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    #introducao-geral .conteudo-principal,
+    #sobre-nos .conteudo-sobre-nos {
+        flex-direction: column; /* Empilha colunas em telas pequenas */
+        align-items: center;
+    }
+
+    #introducao-geral .imagem-destaque,
+    #sobre-nos .historia-resumo,
+    #sobre-nos .padre-info {
+        flex: 0 0 100%; /* Ocupa a largura total */
+        max-width: 100%;
+    }
+
+    #destaques .destaques-grid {
+        grid-template-columns: 1fr; /* Uma única coluna */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 15px;
+    }
+    section {
+        padding: 20px;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+}
